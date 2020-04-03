@@ -1,26 +1,35 @@
-[
+{
+    "icons": [
         {
-            "id":"01",
+            "camera": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Camera.png",
+            "message": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Message.png",
+            "tag": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Tag.png"
+        }
+    ],
+    "posts": [
+        {
+            "id": "01",
             "name": "leedonghae",
             "like": "678,654",
-            "text":"Photo book coming soon !! 📷",
-            "photo":"https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg",
-            "img":"https://i.imgur.com/K3KJ3w4h.jpg"
-         },
-         {
-          "id":"02",
-          "name": "im_jasson",
-          "like": "24,654",
-          "text":"올해는 #벚꽃놀이 가고싶어도 꾹 참아야디😷",
-          "photo":"https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg",
-          "img":"https://i.imgur.com/K3KJ3w4h.jpg"
-         },
-         {
-          "id":"03",
-          "name": "kimheenim",
-          "like": "987,123",
-          "text":"누가 봐도 김체리🍒#동물의숲",
-          "photo":"https://images-na.ssl-images-amazon.com/images/I/61McsadO1OL.jpg",
-          "img":"https://i.imgur.com/K3KJ3w4h.jpg"
-         }    
-]
+            "text": "Photo book coming soon !! 📷",
+            "photo": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/1_1.jpg",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/leedonghae.jpg"
+        },
+        {
+            "id": "02",
+            "name": "im_jasson",
+            "like": "24,654",
+            "text": "올해는 #벚꽃놀이 가고싶어도 꾹 참아야디😷",
+            "photo": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/2_1.jpg",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/im_jasson.jpg"
+        },
+        {
+            "id": "03",
+            "name": "kimheenim",
+            "like": "987,123",
+            "text": "누가 봐도 김체리🍒#동물의숲",
+            "photo": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/3_1.jpg",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/kimheenim.jpg"
+        }
+    ]
+}

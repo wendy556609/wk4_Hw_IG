@@ -7,11 +7,11 @@ const PostScreen = ({navigation}) => {
     return (
       <View style={{flex: 1}}>
         <FlatList
-        data={PostData}
+        data={PostData.posts}
         renderItem={({ item }) => 
         <PostList 
         post={item} 
-        />}
+        navigation={navigation} />}
         keyExtractor={item => item.id}
         />
     </View>
