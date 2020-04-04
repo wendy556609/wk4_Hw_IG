@@ -3,9 +3,9 @@ import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 
 //import postData from "../json/container.json";
 
-const PostList = ({ post, navigation }) => {
+const PostList = ({ icon, post }) => {
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor:"#fff"}}>
       <View style={styles.cardContainerStyle}>
         <View style={[styles.thumbnailContainerStyle, styles.cardSectionStyle]}>
           <Image
@@ -28,6 +28,36 @@ const PostList = ({ post, navigation }) => {
         </View>
         <View style={styles.cardSectionStyle}>
           <View style={styles.headerContentStyle}>
+            <View style={styles.iconStyle}>
+              <View style={{flexDirection: "row"}}>
+                <Image
+                  style={styles.iconImgStyle}
+                  source={{
+                  uri: icon.heart
+                  }}
+                />
+                <Image
+                  style={styles.iconImgStyle}
+                  source={{
+                  uri: icon.chat
+                  }}
+                />
+                <Image
+                  style={styles.iconImgStyle}
+                  source={{
+                  uri: icon.message
+                  }}
+                />
+              </View>
+              <View>
+                <Image
+                  style={styles.tagStyle}
+                  source={{
+                  uri: icon.tag
+                  }}
+                />
+              </View>
+            </View>
             <View>
               <Text style={styles.likeStyle}>{post.like} likes</Text>
             </View>
@@ -46,6 +76,22 @@ const styles = StyleSheet.create({
   thumbnailContainerStyle: {
     flexDirection: "row",
     justifyContent: "flex-start"
+  },
+  iconStyle:{
+    flexDirection: "row",
+    justifyContent: 'space-between'
+  },
+  iconImgStyle:{
+    height: 24,
+    width: 24,
+    marginBottom: 10,
+    marginRight: 10
+  },
+  tagStyle:{
+    height: 30,
+    width: 30,
+    paddingBottom: 10,
+    marginRight: 5
   },
   thumbnailStyle: {
     height: 50,

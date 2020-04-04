@@ -1,11 +1,15 @@
 {
-    "icons": [
-        {
+    "icons": {
+            "ins": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Instagram.png",
             "camera": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Camera.png",
             "message": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Message.png",
-            "tag": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Tag.png"
-        }
-    ],
+            "tag": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Tag.png",
+            "chat": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/chat.png",
+            "edit": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/edit.png",
+            "film": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/film.png",
+            "heart": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/heart.png",
+            "more": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/more.png"
+    },
     "posts": [
         {
             "id": "01",

@@ -1,0 +1,44 @@
+{
+    "user": "wendy556609",
+    "direct": [
+        {
+            "id": "01",
+            "name": "leedonghae",
+            "state":"H a R u",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/leedonghae.jpg"
+        },
+        {
+            "id": "02",
+            "name": "im_jasson",
+            "state":"제이쓴",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/im_jasson.jpg"
+        },
+        {
+            "id": "03",
+            "name": "kimheenim",
+            "state":"🍒🐱🐶💙",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/kimheenim.jpg"
+        }
+        ,
+        {
+            "id": "04",
+            "name": "hyunheehong",
+            "state":"홍현희",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/kimheenim.jpg"
+        }
+        ,
+        {
+            "id": "05",
+            "name": "eunhyukee44",
+            "state":"Eunhyuk",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/kimheenim.jpg"
+        }
+        ,
+        {
+            "id": "06",
+            "name": "SuperJunior",
+            "state":"우린 슈퍼주니 어! 예요💙",
+            "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/kimheenim.jpg"
+        }
+    ]
+}
