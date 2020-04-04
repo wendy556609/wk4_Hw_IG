@@ -11,6 +11,7 @@ const PostScreen = () => {
         renderItem={({ item }) => 
         <PostList 
         icon={PostData.icons}
+        //
         post={item} 
         />}
         keyExtractor={item => item.id}

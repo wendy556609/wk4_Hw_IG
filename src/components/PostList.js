@@ -5,18 +5,26 @@ import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 
 const PostList = ({ icon, post }) => {
   return (
-    <ScrollView style={{backgroundColor:"#fff"}}>
+    <ScrollView style={{ backgroundColor: "#fff" }}>
       <View style={styles.cardContainerStyle}>
         <View style={[styles.thumbnailContainerStyle, styles.cardSectionStyle]}>
+          <View style={{ flexDirection: "row" }}>
+            <Image
+              style={styles.thumbnailStyle}
+              source={{
+                uri: post.img
+              }}
+            />
+            <View style={styles.headerContentStyle}>
+              <Text style={styles.nameStyle}>{post.name}</Text>
+            </View>
+          </View>
           <Image
-            style={styles.thumbnailStyle}
+            style={styles.moreStyle}
             source={{
-              uri: post.img
+              uri: icon.more
             }}
           />
-          <View style={styles.headerContentStyle}>
-            <Text style={styles.nameStyle}>{post.name}</Text>
-          </View>
         </View>
         <View style={styles.cardSectionStyle}>
           <Image
@@ -29,23 +37,23 @@ const PostList = ({ icon, post }) => {
         <View style={styles.cardSectionStyle}>
           <View style={styles.headerContentStyle}>
             <View style={styles.iconStyle}>
-              <View style={{flexDirection: "row"}}>
+              <View style={{ flexDirection: "row" }}>
                 <Image
                   style={styles.iconImgStyle}
                   source={{
-                  uri: icon.heart
+                    uri: icon.heart
                   }}
                 />
                 <Image
                   style={styles.iconImgStyle}
                   source={{
-                  uri: icon.chat
+                    uri: icon.chat
                   }}
                 />
                 <Image
                   style={styles.iconImgStyle}
                   source={{
-                  uri: icon.message
+                    uri: icon.message
                   }}
                 />
               </View>
@@ -53,7 +61,7 @@ const PostList = ({ icon, post }) => {
                 <Image
                   style={styles.tagStyle}
                   source={{
-                  uri: icon.tag
+                    uri: icon.tag
                   }}
                 />
               </View>
@@ -64,7 +72,7 @@ const PostList = ({ icon, post }) => {
             <View style={styles.textStyle}>
               <Text style={styles.nameStyle}>{post.name}</Text>
               <Text>{post.text}</Text>
-            </View>           
+            </View>
           </View>
         </View>
       </View>
@@ -74,24 +82,33 @@ const PostList = ({ icon, post }) => {
 
 const styles = StyleSheet.create({
   thumbnailContainerStyle: {
+    // borderWidth: 1,
+    // borderRadius: 2,
+    // borderColor: "#ddd",
     flexDirection: "row",
-    justifyContent: "flex-start"
+    justifyContent: "space-between"
   },
-  iconStyle:{
+  iconStyle: {
     flexDirection: "row",
     justifyContent: 'space-between'
   },
-  iconImgStyle:{
+  iconImgStyle: {
     height: 24,
     width: 24,
     marginBottom: 10,
     marginRight: 10
   },
-  tagStyle:{
+  tagStyle: {
     height: 30,
     width: 30,
     paddingBottom: 10,
     marginRight: 5
+  },
+  moreStyle: {
+    height: 24,
+    width: 24,
+    marginTop:20,
+    marginRight:5
   },
   thumbnailStyle: {
     height: 50,
@@ -102,19 +119,19 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
     paddingLeft: 10
   },
-  textStyle:{
+  textStyle: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-start",
     paddingTop: 10,
   },
-  likeStyle:{
-    fontWeight:'bold',
-    fontSize:15
+  likeStyle: {
+    fontWeight: 'bold',
+    fontSize: 15
   },
-  nameStyle:{
-    fontWeight:'bold',
-    paddingRight:5
+  nameStyle: {
+    fontWeight: 'bold',
+    paddingRight: 5
   },
   cardContainerStyle: {
     marginLeft: 5,
