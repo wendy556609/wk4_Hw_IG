@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, Image, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Image, TouchableOpacity, View } from "react-native";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -20,7 +20,7 @@ const App = () => {
           options={{
             headerLeft: () => <Image source={{ uri: PostData.icons.camera }} style={styles.cameraStyle} />,
             headerTitle: () => <Image source={{ uri: PostData.icons.ins }} style={styles.titleStyle} />,
-            headerTitleAlign:'center',
+            headerTitleAlign: 'center',
             headerRight: () => {
               return (
                 <TouchableOpacity
@@ -35,14 +35,14 @@ const App = () => {
         <Stack.Screen name="Message"
           component={MessageScreen}
           options={{
-            title:MessageData.user,
+            title: MessageData.user,
             headerTitleStyle: {
-              fontSize:15
+              fontSize: 15
             },
-            headerTitleAlign:'center',
+            headerTitleAlign: 'center',
             headerRight: () => {
               return (
-                <View style={{flexDirection:'row'}}>
+                <View style={{ flexDirection: 'row' }}>
                   <Image source={{ uri: PostData.icons.film }} style={styles.messageStyle} />
                   <Image source={{ uri: PostData.icons.edit }} style={styles.messageStyle} />
                 </View>
@@ -63,22 +63,14 @@ const styles = StyleSheet.create({
     height: 25
   },
   titleStyle: {
-    //alignItems:'center',
-    //marginBottom: 5,
     width: 100,
     height: 40
   },
   headerStyle: {
-    borderWidth: 1,
-    borderRadius: 2,
-    borderColor: "#ddd",
     height: 40,
     width: null,
   },
   userStyle: {
-    borderWidth: 1,
-    borderRadius: 2,
-    borderColor: "#ddd",
     fontSize: 20,
     fontWeight: 'bold',
     height: 40

@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 //import postData from "../json/container.json";
 
 const PostList = ({ icon, post }) => {
+
   return (
     <ScrollView style={{ backgroundColor: "#fff" }}>
       <View style={styles.cardContainerStyle}>
@@ -71,7 +72,14 @@ const PostList = ({ icon, post }) => {
             </View>
             <View style={styles.textStyle}>
               <Text style={styles.nameStyle}>{post.name}</Text>
-              <Text>{post.text}</Text>
+              {post.text.map((item, i) => {
+                if (item.type == "tag") {
+                  return (<Text key={i} style={styles.tag}>{item.content}</Text>)
+                }
+                else {
+                  return (<Text key={i}>{item.content}</Text>)
+                }
+              })}
             </View>
           </View>
         </View>
@@ -82,9 +90,6 @@ const PostList = ({ icon, post }) => {
 
 const styles = StyleSheet.create({
   thumbnailContainerStyle: {
-    // borderWidth: 1,
-    // borderRadius: 2,
-    // borderColor: "#ddd",
     flexDirection: "row",
     justifyContent: "space-between"
   },
@@ -107,8 +112,8 @@ const styles = StyleSheet.create({
   moreStyle: {
     height: 24,
     width: 24,
-    marginTop:20,
-    marginRight:5
+    marginTop: 20,
+    marginRight: 5
   },
   thumbnailStyle: {
     height: 50,
@@ -145,6 +150,9 @@ const styles = StyleSheet.create({
   imageStyle: {
     height: 300,
     width: null
+  },
+  tag: {
+    color: '#007FFF'
   }
 });
 

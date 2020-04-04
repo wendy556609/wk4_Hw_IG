@@ -1,21 +1,26 @@
 {
     "icons": {
-            "ins": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Instagram.png",
-            "camera": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Camera.png",
-            "message": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Message.png",
-            "tag": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Tag.png",
-            "chat": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/chat.png",
-            "edit": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/edit.png",
-            "film": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/film.png",
-            "heart": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/heart.png",
-            "more": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/more.png"
+        "ins": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Instagram.png",
+        "camera": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Camera.png",
+        "message": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Message.png",
+        "tag": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/Tag.png",
+        "chat": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/chat.png",
+        "edit": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/edit.png",
+        "film": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/film.png",
+        "heart": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/heart.png",
+        "more": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/Icons/more.png"
     },
     "posts": [
         {
             "id": "01",
             "name": "leedonghae",
             "like": "678,654",
-            "text": "Photo book coming soon !! 📷",
+            "text": [
+                {
+                    "type": "text",
+                    "content": "Photo book coming soon !! 📷"
+                }
+            ],
             "photo": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/1_1.jpg",
             "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/leedonghae.jpg"
         },
@@ -23,7 +28,20 @@
             "id": "02",
             "name": "im_jasson",
             "like": "24,654",
-            "text": "올해는 #벚꽃놀이 가고싶어도 꾹 참아야디😷",
+            "text": [
+                {
+                    "type": "text",
+                    "content": "올해는 "
+                },
+                {
+                    "type": "tag",
+                    "content": "#벚꽃놀이"
+                },
+                {
+                    "type": "text",
+                    "content": " 가고싶어도 꾹 참아야디😷"
+                }
+            ],
             "photo": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/2_1.jpg",
             "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/im_jasson.jpg"
         },
@@ -31,7 +49,16 @@
             "id": "03",
             "name": "kimheenim",
             "like": "987,123",
-            "text": "누가 봐도 김체리🍒#동물의숲",
+            "text": [
+                {
+                    "type": "text",
+                    "content": "누가 봐도 김체리🍒"
+                },
+                {
+                    "type": "tag",
+                    "content": "#동물의숲"
+                }
+            ],
             "photo": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/3_1.jpg",
             "img": "https://raw.githubusercontent.com/wendy556609/wk4_Hw_IG/master/assets/posts/kimheenim.jpg"
         }
